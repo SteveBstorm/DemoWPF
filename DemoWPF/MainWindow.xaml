@@ -1,0 +1,193 @@
+﻿<Window x:Class="DemoWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <TabControl>
+        <TabItem Header="Demo1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20*"></RowDefinition>
+                    <RowDefinition Height="70*"></RowDefinition>
+                    <RowDefinition Height="50*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <ScrollViewer Grid.Row="1" Grid.Column="1">
+                    <TextBlock  TextWrapping="Wrap">
+                        <TextBlock.Foreground>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                <GradientStop Offset="0" Color="Violet" />
+                                <GradientStop Offset="0.2" Color="Chartreuse" />
+                                <GradientStop Offset="0.4" Color="Violet" />
+                                <GradientStop Offset="1" Color="DarkSalmon" />
+                            </LinearGradientBrush>
+                        </TextBlock.Foreground>
+            Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+                    </TextBlock>
+                </ScrollViewer>
+                <Button Grid.Column="1" 
+                Height="50" 
+                Width="75" 
+                Click="Button_Click" Background="#FFFB9E9E" BorderBrush="#FF0E0202" Foreground="#FF321844" HorizontalAlignment="Center" Margin="0,18,0,19" Visibility="Visible" BorderThickness="10,1,10,1" RenderTransformOrigin="0.5,0.5" >
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="-35.744"/>
+                            <RotateTransform Angle="35.238"/>
+                            <TranslateTransform X="15.572" Y="-22.045"/>
+                        </TransformGroup>
+                    </Button.RenderTransform> Click Ici
+                </Button>
+                <ScrollViewer HorizontalScrollBarVisibility="Visible" Grid.Row="2" 
+                    Grid.ColumnSpan="2">
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                <GradientStop Offset="0" Color="Violet" />
+                                <GradientStop Offset="0.2" Color="Chartreuse" />
+                                <GradientStop Offset="0.4" Color="Violet" />
+                                <GradientStop Offset="1" Color="DarkSalmon" />
+                            </LinearGradientBrush>
+                        </StackPanel.Background>
+
+                        <Label Content="Mon texte" 
+                   Foreground="White" 
+                   FontSize="25"
+                   x:Name="label1"/>
+
+                    </StackPanel>
+                </ScrollViewer>
+                <!--<Canvas Grid.Column="0" Grid.Row="1">
+                    <Button Height="40" Width="70" Canvas.Top="50" Canvas.Right="10" Click="Button_Click_1">
+                        <Button.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                <GradientStop Offset="0" Color="Violet" />
+                                <GradientStop Offset="0.2" Color="Chartreuse" />
+                                <GradientStop Offset="0.4" Color="Violet" />
+                                <GradientStop Offset="1" Color="DarkSalmon" />
+                            </LinearGradientBrush>
+                        </Button.Background>
+                        Salut
+                    </Button>
+                    <Button Height="40" Width="70" Canvas.Bottom="0">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                </Canvas>-->
+                <WrapPanel Orientation="Horizontal">
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                </WrapPanel>
+                <UniformGrid Grid.Row="1">
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                    <Button Height="40" Width="70">Salut</Button>
+                </UniformGrid>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Demo2">
+            <StackPanel>
+                <Label FontSize="25">Demo 2</Label>
+                <TextBox Width="100" Height="25"></TextBox>
+                <Calendar DisplayDateStart="01/12/2021" 
+                          SelectedDate="09/07/2021"
+                          DisplayDateEnd="12/06/2021"
+                          Language="FR-BE"
+                          ></Calendar>
+                <Slider Name="mySlider" Maximum="100" Value="50" Width="120" IsSnapToTickEnabled="True"/>
+                <Separator /><Label FontSize="25" Content="{Binding ElementName=mySlider, Path=Value}"></Label>
+            </StackPanel>
+        </TabItem>
+        <TabItem Header="Demo3">
+            <DockPanel LastChildFill="True">
+                <Grid DockPanel.Dock="Bottom" Height="150" Background="Blue">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <!--<DatePicker Grid.Row="1"></DatePicker>
+                    
+
+                    <ComboBox Grid.Column="1">
+                        <ComboBoxItem>Value 1</ComboBoxItem>
+                        <ComboBoxItem>Value 2</ComboBoxItem>
+                        <ComboBoxItem>Value 3</ComboBoxItem>
+                        <ComboBoxItem>Value 4</ComboBoxItem>
+                    </ComboBox>-->
+
+                    <!--<ListBox ItemsSource="{Binding}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Button Content="{Binding Nom}"></Button>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>-->
+
+                    
+                   
+                </Grid>
+                <StackPanel Background="Red" DockPanel.Dock="Left">
+                    <Button Width="150">Salut</Button>
+                    <Button>Salut</Button>
+                    <Button>Salut</Button>
+                    <Button>Salut</Button>
+                </StackPanel>
+                
+                <TabControl DockPanel.Dock="Right">
+                    <TabItem Header="t1">
+                        <DataGrid AutoGenerateColumns="False" x:Name="datagrid" ItemsSource="{Binding}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Nom de famille" Binding="{Binding Nom}" Width="150" />
+                                <DataGridTextColumn Header="Adresse E-Mail" Binding="{Binding Email}" Width="150" />
+                                <DataGridTemplateColumn>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="&#xE107;" FontFamily="Segoe UI Symbol" Click="Button_Click_2" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </TabItem>
+                    <TabItem Header="t1">blabla</TabItem>
+                    <TabItem Header="t1">blabla</TabItem>
+                </TabControl>
+                
+                
+            </DockPanel>
+        </TabItem>
+    </TabControl>
+    
+</Window>
